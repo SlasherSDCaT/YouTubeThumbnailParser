@@ -1,0 +1,26 @@
+# Go-related files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories (typically not included in Git)
+vendor/
+
+# IDE/editor config files
+.idea/
+.vscode/
+*.swp
+
+# Configuration files
+config.yaml
+thumbnails_cache.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db

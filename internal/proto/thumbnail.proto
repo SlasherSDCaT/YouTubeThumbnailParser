@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package youtube;
+
+option go_package = "YouTubeParser/internal/proto;proto";
+
+service ThumbnailService {
+  rpc GetThumbnail (ThumbnailRequest) returns (ThumbnailResponse);
+  rpc HealthCheck (HealthRequest) returns (HealthResponse);
+}
+
+message ThumbnailRequest {
+  string video_url = 1;  // URL видео на YouTube
+}
+
+message ThumbnailResponse {
+  string thumbnail_url = 1;  // URL превью изображения
+}
+
+message HealthRequest {}
+
+message HealthResponse {
+  bool status = 1;  // true - если сервер доступен
+}

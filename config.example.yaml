@@ -1,0 +1,3 @@
+youtube_api_key: "YOU_API_KEY (for instructions on how to receive, see the readme)"
+
+cache_db_path: "./thumbnails_cache.db"
